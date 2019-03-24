@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Второй урок CSS</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+
+ 
+    <div class="song_block">
+        <marquee id="blink">
+            We don't need no education. 
+            We dont need no thought control. 
+            No dark sarcasm in the classroom. 
+            Teacher leave them kids alone. 
+            Hey! Teacher! Leave them kids alone!
+            All in all it's just another brick in the wall.
+            (All in all you're just) another brick in the wall.
+        </marquee>
+    </div>
+
+   
+<p>– – – – – – – – – – – – – – – – – – – – –<br />
+    – – – – – – – – – – – – – – – – – – – – –</p>
+   
+
+    <h1>Второй урок CSS - псевдоклассы и псевдоэлементы</h1>
+    
+    <hr>
+    
+    <input type="text" class="ex" type="email" required>
+    <input type="submit" value="RUN"><br /><br /><br />
+    
+    <a href="#" class="ex1">GOOGLE</a>
+    <br /><br />
+    <a href="##" class="ex2">GOOGLE</a>
+    <br /><br />
+    <a href="##" class="ex2">GOOGLE</a>
+    <div>
+    
+    <hr>
+        
+    <span>Text text text text text text</span>  
+    <span>Text text text text text text</span>
+    <span class="ex4">Text text text text text text</span>   
+    <hr>
+    
+    <ul>
+        <li><a href="#">item 1</a></li>
+        <li><a href="#" class="exx">item 2</a>
+            <ul class="sub">
+                <li><a href="#">item 2.1</a></li>
+                <li><a href="#">item 2.2</a></li>
+            </ul>
+        </li>
+    </ul>
+    
+    <br><br>
+    
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+    
+    
+<pre>
+<strong>Псевдоклассы</strong>
+
+1.  :requierd {
+    можно использовать без селектора, где есть required
+}
+    
+    .ex:required {
+    
+}
+
+    :read-only {
+    данное поле мы можем только читать
+}
+
+    :disabled {
+    
+}
+
+    .ex:required:disabled {
+    
+}
+
+    .ex:focus {
+    border: 2px yellow solid;
+}
+
+    :invalid {
+    когда поле required, данные есть, но не валидны
+}
+
+    :valid {
+    когда элемент валидный, сделать поле таким-то
+}
+
+    :hover {
+    
+}
+
+– – – – – – – – – – – – – – – – – – – – – 
+
+<strong>Псевдоклассы по ссылкам:</strong>
+   
+    .ex:active {
+    color: brown;
+}
+
+    .ex:link {
+    color: pink;
+}
+
+    :visited {
+    те, которые уже посещенные
+}
+
+– – – – – – – – – – – – – – – – – – – – – 
+
+display: none; 
+display: block; - делает блочным элемент
+display: inline; - делает строчным элемент
+display: inline-block; - и блочный и строчный элемент, но стоять будут в строку
+
+overflow: hidden;
+все что за пределами блока нужно скрыть
+
+ul>li:first-child {
+    background-color: aquamarine;
+}
+
+ul>li:last-child {
+    background-color: black;
+}
+
+ul>li:only-child {
+    когда элемент один ребенок у родителей
+}
+ 
+p:last-of-type {
+    первый элемент среди P
+}
+ 
+ul>li:nth-child(odd){
+    background-color:#cce;
+}
+
+ul>li:nth-child(even){
+    background-color:#bca;
+}
+
+ul>li:nth-child(2n+1){
+    background-color:#aaa;
+}
+ 
+3n+1
+ 
+n - счетчик;
+
+– – – – – – – – – – – – – – – – – – – – – 
+– – – – – – – – – – – – – – – – – – – – –  
+
+<hr>
+  
+<strong>Псевдоэлементы</strong>
+
+<p>Text text text</p>
+<p>Text</p>
+<p>A la gere comme a la gere</p>
+
+<hr>
+
+p::after {
+    после всех элементов P добавит чтолибо    
+}
+ 
+p::before {
+    до всех элементов P добавит чтолибо    
+}
+
+первая строка абзаца будет закрашена красным цветом
+p::first-line {
+    color:red;
+}
+
+первый символ абзаца будет закрашена красным цветом
+p::first-letter {
+    color:green;
+}
+
+p::selection {
+    при выделении текста курсором, можно задать стилизацию
+}
+
+-ms-свойство:значение - майкрософь
+-o-свойство:значение - опера
+-moz-свойство:значение - мозилла
+-webkit-свойство:значение - хром, сафари
+ 
+– – – – – – – – – – – – – – – – – – – – – 
+– – – – – – – – – – – – – – – – – – – – – 
+
+<strong>Свойства для работы с текстом:</strong>
+
+ШРИФТЫ
+
+Правила:
+@ - правила
+@font-face - правило для подгрузки шрифтов
+
+@font-face {
+    font-family: "ex";
+    src: url("путь к файлу шрифта");
+}
+
+p {
+    font-family:"ex";
+}
+
+font: 14px Arial;
+
+h1 {
+    text-align: center; - формат текста по центру
+    text-align: justify; - равномерный по правой и левой стороне
+    
+    text-decoration: overline; - подчеркнутая линий находистя сверху
+    text-decoration: underline; - подчеркнутая линия находится снизу
+    text-decoration: none; - убирает подчеркивание ссылок
+    text-decoration: line-throgh - зачеркнутый текст;
+    text-decoration: blink
+}
+ 
+p {
+    text-indent: 12px; - отступ первой строки
+    word-spacing: 20px; - отступ между словами
+    letter-spacing: 20px; - отступ между буквами
+    
+    line-height: 20px; - высота строки - межстрочный интервал
+    text-shadow: 2px 4px 2px #cce      - тень для текста (координаты по х и у | радиус размытия | цвет)
+    text-overflow: ellipsis(многоточие) - текст, который не поместился в блок, его настройки, можно запрятать внутри блока;
+                    clip;
+}
+– – – – – – – – – – – – – – – – – – – – – 
+– – – – – – – – – – – – – – – – – – – – – 
+
+<input type="text" readonly>
+
+</pre>
+       <hr>
+    </div>
+    
+</body>
+</html>

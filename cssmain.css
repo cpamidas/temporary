@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* SIDEBAR START */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    background-color: #fff;
+}
+
+.logo {
+    color: #323b44;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.sidebarnav > ul > li > a {
+    height: 45px;
+    display: block;
+    margin: 5px 0px;
+    color: #323b44;
+    font-family: 'Roboto', sans-serif;
+    line-height: 45px;
+    text-decoration: none;
+    padding: 8px 25px;
+    margin-left: 5px;
+}
+
+.sidebarnav > ul > li > a:hover {
+
+    border-left: 3px #3bafda solid;
+    color: #3bafda;
+    margin-left: 0px;
+}
+
+.sidebarnav > ul > li > a > i {
+    margin-right: 15px;
+}
+
+.sidebarnav {
+    margin-top: 60px;
+}
+
+/* SIDEBAR END */
+
+/* MAIN */
+
+.main {
+    background-color: #323b44;
+    min-height: 900px;
+    margin-left: 240px;
+}
+
+/* .navbar {
+    clear: both;
+} */
+
+.navbar > ul > li {
+    display: inline-block;
+}
+
+.navbar-left > ul > li > a {
+    display: inline-block;
+    line-height: 70px;
+    color: white;
+    font-size: 28px;
+    padding: 8px 20px;
+}
+
+.btn-menu {
+	display: block;
+	color: white;
+	font-size: 24px;
+	padding: 20px;
+}
+
+/* .navbar > ul {
+    float: left;
+} */
+
+#search { 
+    height: 34px;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px rgba(255, 255, 255, 0.1) solid;
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+
+#search:focus {
+    outline: 0;
+}
+
+::-webkit-input-placeholder { color: white; }
+::-moz-placeholder          { color: white; }
+:-moz-placeholder           { color: white; }
+:-ms-input-placeholder      { color: white; }
+
+.form-icon {
+    position: relative;
+    color: white;
+    font-size: 22px;
+    right: 35px;
+}
+
+.navbar-left {
+    float: left;   
+}
+
+.navbar-right {
+    float: right;
+}
+
+.avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	position: relative;
+	top: 10px;
+	left: 5px;
+}
+
+.btn-avatar {
+	display: block;
+	padding: 10px;
+    padding-right: 30px;
+}
+
+.breadcrumbs {
+    height: 70px;
+    background-color: #36404a;
+    padding-right: 20px;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.breadcrumbs-nav > li {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+}
+
+.breadcrumbs-nav > li > a {
+    color: #6c757d;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0 5px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.breadcrumbs > h3 {
+    width: 150px;
+    height: 70px;
+    line-height: 70px;
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+.breadcrumbs-nav > li > a.active {
+    color: #3bafda;
+}
+
+/* .row {
+    padding: 10px;
+}
+ */
+
+.row-padding {
+    padding: 10px;
+}
+
+.row::after, row::before {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.col-md-12 {
+    width: 100%;
+    float: left;
+}
+
+.col-md-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-md-8 {
+    width: 66.7%;
+    float: left;
+}
+
+.col-md-7 {
+    width: 58.3%;
+    float: left;
+}
+
+.col-md-5 {
+    width: 41.6%;
+    float: left;
+}
+
+.col-md-4 {
+    width: 33.3%;
+    float: left;
+}
+
+.col-md-3 {
+    width: 25%;
+    float: left;
+}
+
+.content-widget {
+    background-color: #36404a;
+    min-height: 100px;
+    margin: 0px 10px;
+    padding: 10px 16px;
+}
+
+.circle {
+    position: relative;
+    top: 5px;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.circle > h3 {
+    text-align: right;
+}
+
+.circlegraph {
+    width: 105px;
+    height: 105px;
+}
+
+.info {
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.info > p {
+    margin-bottom: 10px;
+    font-size: 17px;
+    
+}
+
+.info > h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-green {
+    color: #00b19d;
+}
+
+.text-blue {
+    color: #3bafda;
+}
+
+.text-red {
+    color: #f76397;
+}
+
+.text-grey {
+    color: #ccc;
+}
+
+
+
+/* CIRCLE */
+
+.chart-number {
+    color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    fill: #ccc;
+}

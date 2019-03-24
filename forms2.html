@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы урок №2. Формы, фреймы, теги.</title>
+</head>
+<body>
+    <h1>Формы урок №2. Формы, фреймы, теги.</h1> 
+    <br />
+    <form method="POST">
+    <textarea name="description"></textarea>
+    <br />
+    <select name="country[]" size="5" multiple>
+        <option value="Россия">Россия</option>
+        <option value="Украина">Украина</option>
+        <option value="Казахстан" selected>Казахстан</option>
+        <option value="Беларусь" selected>Беларусь</option>
+        <option value="Нидерланды" selected>Нидерланды</option>
+    </select>
+    </form>
+    
+    <br />
+    
+    <form method="POST">
+    <select name="country[]" size="5" id="countries">
+       <optgroup label="countries">
+        <option value="Россия">Россия</option>
+        <option value="Украина">Украина</option>
+        <option value="Казахстан" selected>Казахстан</option>
+        <option value="Беларусь" selected>Беларусь</option>
+        <option value="Нидерланды" selected>Нидерланды</option>
+       </optgroup>
+       <optgroup label="continets">
+        <option value="Африка">Африка</option>
+        <option value="Северная Америка">Северная Америка</option>
+        <option value="Южная Америка" selected>Южная Америка</option>
+        <option value="Европа" selected>Европа</option>
+        <option value="Азия" selected>Азия</option>
+        <option value="Австралия" selected>Австралия</option>
+       </optgroup>        
+    </select>
+    </form>
+    
+    <hr>
+    
+    <details>
+        <summary>Text title</summary>
+        Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+    </details>
+    
+    <br />
+    
+    <progress max="100" value="67"></progress><br /><br />
+    <meter max="100" value="67"></meter>
+    
+    <br /><br />   
+    
+    <img src="/images/htmlbook.png" alt="" width="500">
+    
+    <br />
+    
+    <svg>
+        <circle r="50" fill="red" cx="50%" cy="50%"></circle>
+    </svg>
+    
+    <canvas></canvas>
+    
+    <br /><br /><br />
+    
+    <audio controls autoplay loop>
+        <sourсe src="#" type="audio/wav"></sourсe>
+    </audio>
+               
+    <br />
+               
+    <video src="#" controls autoplay>
+        <track субтитры src="" srclang="en" label="English">
+    </video>
+    
+    <br />
+    
+    <object data="objtfile.swf" type="application/x-shockwaveflash">
+            
+    </object>
+    
+    <br />
+    
+    <embed src="https://www.youtube.com/embed/K94AKYr_IRo" pluginspage="#">
+    
+    <br />
+    <br />
+      
+    <iframe src="http://narodtovar.ru/" width="540">
+        
+    </iframe>
+    
+    <br />
+    <br />
+      
+    <header></header>
+       
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K94AKYr_IRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 
+    <figure>
+        <figcaption></figcaption>
+    </figure>
+                 
+    <style>
+        Стили блэт
+    </style>
+    
+    <script>
+    </script>
+    Подключение стилей
+                 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" href="favicon.ico" type="image/gif" href="">
+                  
+    <pre>
+    textarea - не форматировать не ставить пробелов между тегами;
+    multiple - несколько значений формы
+    selected - базовое поле значение
+    disabled - выключить возможность заполнения элемента формы
+    
+    Медиатеги:
+    img
+    
+    Frame:
+    "sandbox" - позволяет задать ограничения на загружаемый контент;
+    
+    Теги семантики:
+    div
+    header - заголовочная часть сайта
+    nav - элементы навигации
+    section - секции
+    main - обертка для основного контента, содержимого
+    aside - боковое меню
+    footer
+    </pre>
+    <hr>
+    </body>   
+</html>

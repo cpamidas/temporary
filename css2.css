@@ -1,0 +1,151 @@
+/*
+div {
+    margin: 50px auto;
+}
+
+.ex:focus {
+    border: 10px yellow solid;
+    outline: 0;
+}
+
+.ex:invalid {
+    border: 2px red solid;
+}
+
+.ex1:active {
+    color: orange;
+}
+
+.ex2:link {
+    color: pink;
+}
+
+:visited {
+    color:greenyellow;
+}
+
+:hover {
+    border: 1px yellowgreen solid;
+}
+
+.ex4 {
+    display:block;
+}
+
+
+.sub {
+    display:none;
+}
+
+
+.exx:hover+ul{
+    display:inline;
+}
+
+a:hover + .submenu {
+    display:block;
+}
+
+
+
+ul>li:first-child {
+    background-color: aquamarine;
+}
+
+ul>li:last-child {
+    background-color: black;
+}
+
+ul>li:only-child {
+    когда элемент один ребенок у родителей
+}
+
+ul>li:nth-child(odd){
+    background-color:#cce;
+}
+
+ul>li:nth-child(even){
+    background-color:#bca;
+}
+
+ul>li:nth-child(2n+1){
+    background-color:#aaa;
+}
+
+
+
+ul>li:nth-child(5){
+    background-color:#aaa;
+}
+
+p::after {
+    content: ".";
+}
+
+p::first-line {
+    color:red;
+}
+
+p::first-letter {
+    color:green;
+}
+
+p::selection {
+    color: yellow;
+    font-size: 20px;
+}
+
+
+p {
+    font-family: "ex" arial;
+    font-size: 20px;
+    font-weigth: 700;
+    font-stretch: normal;
+    font-style: italic;
+}
+
+*/
+
+@font-face {
+    font-family: "ex";
+    src: url("/fonts/homoarak.ttf");
+}
+
+.song_block {
+    width: 500px;
+    margin: 0 auto;
+    border: 5px green dashed;
+}
+
+marquee {
+    font-size: 30px;
+    color: red;
+    font-family: arial; 
+}
+
+#blink {
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+
+
+/* 
+
+@-webkit-keyframes blink {
+  0% { color: rgba(34, 34, 34, 1); }
+  50% { color: rgba(34, 34, 34, 0); }
+  100% { color: rgba(34, 34, 34, 1); }
+}
+
+что такое @ - это общая настройка?
+элементы начинающиеся с "-" это что такое?
+почему не работает color в теге marquee?
+
+*/ 
+
+

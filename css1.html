@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css1.css">
+</head>
+<body>
+   
+    <a href="https://google.com">Google</a><br/>
+    <a href="https://i.ua" target="_blank">I UA</a><br/>
+    <a href="http://www.yahoo.com/">Yahoo</a><br/><br/>
+    
+    – – – – – – – – – – – – – – – – – – – – – – – – 
+    
+    <br/>
+    
+    <input type="text">
+    <input type="button">
+    <input type="email" required>
+    
+    <br/><br/>
+    
+    <input type="checkbox"><br/>
+    <input type="checkbox"><br/>
+    <input type="email" required><br/><br/>
+    
+    – – – – – – – – – – – – – – – – – – – – – – – – 
+    
+    <br/>
+   
+    <div class="test">
+        <p>hello</p>
+        <p class="test2">
+            world
+        </p>
+    </div>
+       
+    <div class="test">
+        <p class="ex">MEGA</p>
+        <p class="test2">
+            WORLD LOL
+        </p>
+    </div> 
+        
+        
+    <hr>
+    
+    <div class="ex">
+        <p class="ex2">ex2 bla bla bla</p>
+        <p>text</p>
+        <img src="" alt="">
+        <div>
+            <p class="1class">123123div div</p>
+        </div>
+        
+        <div>
+            <p class="dementor">div div</p>
+        </div>
+        
+        <section>
+            section
+        </section>
+        
+        <div>
+            <p>div div</p>
+        </div>
+    </div>
+    
+    <div class="ex">
+       div ex
+        <span class="ex2"> span ex2</span>
+    </div>
+    
+    
+    <br/> <br/> <br/>
+    
+    – – – – – – – – – – – – – – –
+    
+    <pre><b>Селекторы:</b>
+    
+    1. Основные
+        - по тегу, названию;
+        - по названию классу;  . 
+        - по названия идентификатора;  #
+        - * все эелементы;
+        
+    . - показатель класса;
+    # - признак идентификатора;
+    * - выделяет все элементы;
+    
+    2. Иерархические
+    
+        - Селектор по дочерним эелементам - > ;
+        - Селектор по потомкам и дочерним - _пробел_;
+        - Селектор по сестринским
+            * первый сестринский + ;
+            * все сестринские ~ ;
+            
+            
+            
+        div>p {
+            все теги p которые находятся внутри дивов
+        }
+        
+        
+        Селектор по потомкам;
+        div p{
+            выберутся все теги p, которые внутри div и дочерние и потомки
+        }
+        
+        .ex>p.ex2 {
+            все дочерние p у которых класс ex2
+        }
+        
+        
+        Сестринские элементы:
+            - первый сестринский;
+            
+            img+div{
+                назначает стилизацию первому сестринскому div
+            }
+            
+            img~div{
+                назначает стилизацию всем сестринским элементов
+            }
+            
+    3. Селекторы по атрибутам
+       
+    <a href="https://google.com">Google</a>
+    <a href="https://i.ua" target="_blank">I UA</a>
+    <a href="http://www.yahoo.com/">Yahoo</a>
+       
+    a[href] {
+        color: green;  
+    }
+       
+    a[target] {
+        color: green;  
+    }
+       
+    a[target="_blank"] {
+        color:green;   
+    }
+      
+    a[href^="http:"] {
+        color:green;   
+    }
+       
+    $ - селектор по доменным зонам $ - заканчивается на;
+    * - не имеет значение что до/после * - содержит;
+    ^ - когда НАЧИНАЕТСЯ на какое-то значение
+        
+    
+    – – – – – – – – – – – – – – –
+    
+    Комбинация стилей:
+    
+    p.example {
+        находит все теги p и отбирает только те, у которых есть класс example
+    }
+    
+    .example.ex{
+        находит элементы с нужными классами
+    }
+    
+    div, p, h1 {
+        запятая - оператор перечисления селекторов
+    }
+    
+    ex2,.example {
+    
+    }
+    
+    * {
+        margin: 0;
+        padding: 0'
+    }
+    
+    родители
+    дочерние элементы
+    потомки (в самой глубине)
+    
+    сестринские элементы (те кто находится на одной глубине иерархии)
+    
+    </pre>
+
+</body>
+</html>
+
+
+<div class="example ex2">
+
+
+Классов можно указывать несколько через пробел
+По названию идентификатора - аттрибут - id=""
+ID 
+
+
+main.css
+selector
+
+
+Псевдоклассы:
+-------------------
+Могут выступать селекторами
+
+
+ДЗДЗДЗДЗДЗДЗДЗДЗ
+
+
+checkbox
+
+<input type="checkbox">
+<label>Ukraine</label>
+
+По нажатию меняется цвет;
+
+<label>Ukraine</label>
+<input type="checkbox">
+

@@ -1,0 +1,433 @@
+/*
+
+Text-align свойста применяются для блочного элемента и внутри будет текстовый элемент 1
+
+width
+height
+
+min-height - если нужны минимальные размеры блока в независимости от размеров контента
+
+
+max
+
+% - процент о тродительского размера;
+in - дюймы
+pc - пункты
+pt - пики
+em - относительное измерение высоты шрифта / по размеру M
+ex - относительное измерение высоты шрифта / по размеру X
+
+yeh - em - по крайним точкам выпирания буквы;
+yeh - ex - по основной части буквы;
+
+vh - 1% высоты окна просмотра;
+vw - 1% ширины окна просмотра;
+
+Для выравнивания по центру:
+
+- - - - - - - - - - - - - - -
+
+margin - top right bottom left - внешний отступ
+
+auto - работает только для ширины;
+
+padding - внутренний отступ до границ элемента - паддинг расширяет высоту/ширину блока в котором используется
+
+
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slide {
+    
+    from {
+        margin-left: 0;
+    }
+    
+    50% {
+        margin-left: -1200px; 
+    }
+    
+    to {
+        margin-left: -2400px;
+    }
+}
+
+nav {
+    margin: 0 auto;
+}
+
+.nav>li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.nav>li>a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 89px;
+}
+
+li:first-of-type > a:hover {
+    background-color: #444;
+    color: #ccc;
+    border-radius: 20px 0px 0px 20px;
+}
+
+li:last-of-type > a:hover {
+    background-color: #444;
+    color: #ccc;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.nav>li>a:hover {
+    background-color: #444;
+    color: #ccc; 
+}
+
+.nav {
+    background-color: #252525;
+    border-radius: 20px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    height: 380px;
+    overflow: hidden;
+    background-size: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.banner>ul>li {
+    display: inline-block;
+}
+
+.banner>ul {
+    width: 3600px;
+    animation: slide 5s infinite alternate; 
+}
+
+.product {
+    width: 388px;
+    border:  1px #ddd solid;
+    margin: 5px;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-image:hover {
+    opacity: 0.9;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info > h3 {
+    color: #23a1d1;
+    font-family: arial;
+    font-size: 17px;
+}
+
+.product-info-description {
+    font-family: arial;
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+}
+
+.product-info-price {
+    font-family: arial;
+    font-size: 13px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.product-info-price {
+    font-family: arial;
+    font-size: 13px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.product-buttons {
+    clear: both;
+    height: 45px;
+}
+
+
+
+.btn {
+    border: 0;
+    background-color: #eee;
+    float: left;
+    height: 45px;
+}
+
+.btn-cart {
+    width: 60%;
+}
+
+.default {
+    width: 20%;
+    border-left: 1px #ddd solid;
+}
+
+.ex {
+    position: relative;
+    background-color: black;
+}
+
+.ex1 {
+    left: 0;
+    width: 40px;
+    background-color: blue;
+}
+
+.ex3 {
+    right: 0;
+    width: 300px;
+    background-color: green;
+}
+
+.ex2 {
+    left: 40px;
+    right: 300px;
+    background-color: yellow;
+}
+
+.ex > div {
+    position: absolute;
+    height: 300px;
+}
+
+footer {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color:aqua;
+    bottom: 0;
+    
+}
+
+
+.all > div {
+    position: absolute;
+    height: 300px;
+}
+
+.ex333 {
+
+    right: 0px;
+    width: 300px;
+    background-color: yellow;
+}
+
+.ex222 {
+
+    right: 300px;
+    width: 600px;
+    background-color: blue;
+}
+
+.ex111 {
+    left: 0;
+    right: 900px;
+    background-color: green;
+}
+
+.flex {
+    display: flex; 
+    align-items: center;
+    height: 900px;
+}
+
+.ex777 {
+    height: 200px;
+    width: 600px;
+    
+}
+
+.red {
+    background-color: red;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) { ширина экрана до 600px
+    .ex777 {
+        background-color: yellow;
+    }
+}
+
+/* .ex2 {
+    float: left;
+    width: 20%;
+    background-color: #333;
+}
+
+.ex3 {
+    float: right;
+    width: 30%;
+    background-color: #444;
+}
+
+.clear {
+    clear: both;
+}
+
+.ex4 {
+    background-color: brown;
+    width: 50%;
+}
+
+.ex {
+    background-color: green;
+}
+
+.ex > div {
+    min-height: 300px;
+}
+
+*/
+
+
+/*
+
+.banner {
+    background-attachment: fixed;
+    background-clip: ;
+    background-image: url('путь к изображению');
+    background-repeat: repeat-x repeat-y;
+background-size: 100% auto (под оригинал изображения) cover (по ширине элемента), contain (по высоте);
+
+}
+
+Scroll - изображение на фоне скроллится с текстом
+Fixed - фон остается, а текст скроллится
+
+background-clip: 
+padding-box - от внутреннего края;
+border-box - граница рамки внутри фона
+content-box - большой отступ до содержимого
+
+Изображение на фоне блока:
+background-image:
+
+
+
+3, 4 занятия по CSS;
+
+
+overflow: hidden; - скрывает часть содержимого, которое находится снаружи
+overflow: scroll;
+
+*************
+Анимация:
+*************
+
+animation-name: slide; - имя анимации
+
+animation-duration: 2s; - время выполнения всей анимациии от точки 0 до точки 100%;
+
+animation-iteration-count: 3;  - указывается сколько раз будет повторятся анимация; infinite - зацикливание
+
+animation-timing-function: linear;  - метод как будет двигаться наша анимация;
+
+animation-delay: 2s; - отсрочка старта;
+
+- отсрочка старта 
+
+*************
+*************
+
+float: left; - делает прикрепление элемента по какой-то одной стороне;
+При флоате схлопывается высота родительского элемента
+
+блоку между ряда флоатов назначается очищение приклеивания по нужной стороне, чтобы вернут ьвысоту родительскому элементу;
+
+clear: left right both
+<div class="clear"></div> 
+
+border:
+
+1 - ширина, 2 - цвет, 3 - стиль
+
+double
+dashed
+dotted
+solid
+grouve
+ridge
+inside
+outside
+none
+
+
+border-right-widht: 3px; - ширина границы конкретной
+
+********
+position
+********
+
+желательно указать конкретный размер ширины и высоты
+
+relative - ex1 и ex2 будут идти друг за другом (относительно друг друга)
+absolute - абсолютное позиционирование с самого начала
+fixed - задаем размер говорим где стать и он станет там жестко; елемент останется на том же самом месте
+
+абсолют делает относительно родителя своего
+
+4 свойста соответствующие разным сторонам
+
+top: 10px;
+left: 50px;
+rigt: 0;
+bottom: 0;
+
+!!!!обязательно должен быть height у элементов при position!!!!
+
+align-items: center; - центрует по вертикали
+********
+position
+********
+
+flexbox
+
+
+********
+правила
+********
+
+@font-face {
+
+}
+
+@keyframes {
+
+}
+
+@media (max-width: 600px) { ширина экрана до 600px
+    background-color: yellow;
+}
+
+
+*/
+
+
+
+

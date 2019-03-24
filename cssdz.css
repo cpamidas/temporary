@@ -1,0 +1,12 @@
+input:checked + label {
+    color: red;
+}
+
+.change { 
+    float: left;
+}
+
+input:checked + .change {
+    color: green;
+}
+

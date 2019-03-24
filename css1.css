@@ -1,0 +1,57 @@
+.dementor {
+    font-size: 22px;
+}
+
+img+div {   
+    height: 300px;
+    background-color: green;
+}
+
+div>p+p.test2 {
+    color: red;
+}
+
+div>p.ex+p {
+    color: green;
+}
+
+    a[href] {
+        color: green;  
+    }
+       
+    a[target] {
+        color: green;  
+    }
+       
+    a[target="_blank"] {
+        color:green;   
+    }
+
+a[href*="yahoo"] {
+    color:red;
+}
+
+a[href$="com"] {
+    color:aquamarine;
+}
+
+a[href$="ua"] {
+    color:pink;
+}
+
+    a[href^="http:"] {
+        color:red;   
+    }
+
+    a[href^="https"] {
+        color:green;   
+    }
+
+input:required {
+    background-color: darkred;
+}
+input:checked {
+    background-color: darkred;
+    width: 50px;
+    height: 50px;
+}

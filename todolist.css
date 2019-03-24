@@ -1,0 +1,26 @@
+#productlist {
+    padding: 0;
+}
+
+#productlist li {
+    
+    list-style-type: none;
+    margin-top:10px;
+    
+}
+
+
+li > span {
+    color: green;
+    margin: 0px 5px 0 20px;
+}
+
+:checked + span {
+    text-decoration: line-through;
+    color:red;
+    
+}
+
+li > a {
+    color: black;
+}
